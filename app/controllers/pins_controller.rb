@@ -1,5 +1,5 @@
 class PinsController < ApplicationController
-  @@pins = File.read("app/assets/javascripts/pins_formatted.json")
+  @@pins = JSON.parse(File.read("app/assets/javascripts/pins_formatted.json"))
 
   def index
     @pins = @@pins
