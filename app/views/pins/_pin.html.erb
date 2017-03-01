@@ -1,0 +1,27 @@
+<div class="pin">
+<h3>Image:</h3>
+  <img src="<%=  pin["images"]["736x"]["url"] %>" alt="">
+
+  <h3>Title:</h3>
+  <%= pin["title"] %>
+
+  <h3>Description:</h3>
+  <%= pin["description"] %>
+
+  <h3>Repin Count:</h3>
+  <%= pin["repin_count"] %>
+
+  <h3>Attribution Title</h3>
+  <% if pin["rich_summary"].present? == true %>
+    <%= pin["rich_summary"]["site_name"] %>
+  <% end %>
+
+  <h3>Pinner Name: </h3>
+  <%= pin["pinner"]["full_name"] %>
+
+  <h3>Board:</h3>
+  <%= pin["board"]["name"] %>
+
+  <h3>Pinner Image: </h3>
+  <img src="<%= pin["pinner"]["image_small_url"] %>" alt="">
+</div>
