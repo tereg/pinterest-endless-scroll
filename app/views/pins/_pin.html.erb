@@ -2,15 +2,17 @@
   <div class="card">
     <div class="card-block">
       <img class="card-img-top img-fluid main-image" src="<%=  pin["images"]["736x"]["url"] %>" alt="">
-      <p class="card-text"> <%= pin["title"] %></p>
-      <p class="card-text"> <%= pin["description"] %></p>
-      <p class="card-text"> <%= pin["repin_count"] %></p>
-      <% if pin["rich_summary"].present? == true %>
-        <p class="card-text"> <%= pin["rich_summary"]["site_name"] %></p>
-      <% end %>
-      <p class="card-text"> <%= pin["pinner"]["full_name"] %></p>
-      <p class="card-text"> <%= pin["board"]["name"] %></p>
-      <img src="<%= pin["pinner"]["image_small_url"] %>" alt="">
+      <div class="container-fluid">
+        <p class="card-text title"> <%= pin["title"] %></p>
+        <p class="card-text"> <%= pin["description"] %></p>
+        <p class="card-text"> <%= pin["repin_count"] %></p>
+        <% if pin["rich_summary"].present? == true %>
+          <p class="card-text site-name"> <%= pin["rich_summary"]["site_name"] %></p>
+        <% end %>
+        <p class="card-text credit-name"> <%= pin["pinner"]["full_name"] %></p>
+        <p class="card-text board-name"> <%= pin["board"]["name"] %></p>
+        <img src="<%= pin["pinner"]["image_small_url"] %>" alt="">
+      </div>
     </div>
   </div>
 </div>
