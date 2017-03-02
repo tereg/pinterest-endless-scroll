@@ -3,6 +3,6 @@ class PinsController < ApplicationController
   @@pins = JSON.parse(File.read("app/assets/javascripts/pins_formatted.json"))
 
   def index
-    @pins = @@pins.paginate(:page => params[:page], :per_page => 10)
+    @pins = @@pins.paginate(:page => params[:page], :per_page => 20)
   end 
 end
