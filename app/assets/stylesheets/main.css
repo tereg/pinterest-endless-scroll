@@ -66,3 +66,7 @@ body {
   line-height: 16px;
   word-spacing: 0;
 }
+
+.user-image {
+  border-radius: 50%;
+}
