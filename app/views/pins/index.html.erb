@@ -1,6 +1,11 @@
 <div id="pins">
-  <h1>Pins</h1>
-  <%= render partial: 'pin', collection: @pins %>
+  <div class="container-fluid">
+    <div class="card-columns">
+        <div class="individual-pins">
+          <%= render partial: 'pin', collection: @pins %>
+        </div>
+      </div>
+  </div>
 </div>
 <%= will_paginate @pins %>
 
