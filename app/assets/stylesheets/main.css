@@ -52,7 +52,7 @@ body {
 }
 
 .nav-bar {
-    margin-top: -20px;
+  margin-top: -20px;
 }
 
 .pinterest-logo {
@@ -84,7 +84,8 @@ body {
 }
 
 .user-image {
-  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
 .videos {
