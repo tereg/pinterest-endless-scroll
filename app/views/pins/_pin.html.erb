@@ -3,9 +3,9 @@
     <div class="card-block">
       <img class="card-img-top img-fluid main-image" src="<%=  pin["images"]["736x"]["url"] %>" alt="">
       <div class="container-fluid">
+        <p class="card-text text-right repin-count"> <%= pin["repin_count"] %></p>
         <p class="card-text title"> <%= pin["title"] %></p>
         <p class="card-text"> <%= pin["description"] %></p>
-        <p class="card-text"> <%= pin["repin_count"] %></p>
         <% if pin["rich_summary"].present? == true %>
           <p class="card-text site-name"> <%= pin["rich_summary"]["site_name"] %></p>
         <% end %>
