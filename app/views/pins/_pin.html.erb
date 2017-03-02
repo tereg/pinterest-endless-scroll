@@ -9,9 +9,15 @@
         <% if pin["rich_summary"].present? == true %>
           <p class="card-text site-name"> <%= pin["rich_summary"]["site_name"] %></p>
         <% end %>
-        <p class="card-text credit-name"> <%= pin["pinner"]["full_name"] %></p>
-        <p class="card-text board-name"> <%= pin["board"]["name"] %></p>
-        <img class="user-image" src="<%= pin["pinner"]["image_small_url"] %>" alt="">
+        <div class="row">
+          <div class="col-md-2">
+            <img class="user-image" src="<%= pin["pinner"]["image_small_url"] %>" alt="">
+          </div>
+          <div class="col-md-10">
+            <p class="card-text credit-name"> <%= pin["pinner"]["full_name"] %></p>
+            <p class="card-text board-name"> <%= pin["board"]["name"] %></p>
+          </div>
+        </div>        
       </div>
     </div>
   </div>

@@ -47,6 +47,8 @@ body {
   letter-spacing: -0.05px;
   line-height: 12px;
   word-spacing: 0;
+  margin-bottom: 3px;
+  margin-top: 15px;
 }
 
 .site-name {
