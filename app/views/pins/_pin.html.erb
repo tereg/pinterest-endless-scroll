@@ -3,12 +3,18 @@
     <div class="card-block">
       <img class="card-img-top img-fluid main-image" src="<%=  pin["images"]["736x"]["url"] %>" alt="">
       <div class="container-fluid">
-        <p class="card-text text-right repin-count"> <%= pin["repin_count"] %></p>
-        <p class="card-text title"> <%= pin["title"] %></p>
-        <p class="card-text"> <%= pin["description"] %></p>
-        <% if pin["rich_summary"].present? == true %>
-          <p class="card-text site-name"> <%= pin["rich_summary"]["site_name"] %></p>
-        <% end %>
+        <div class="row">
+          <div class="col-md-8">
+            <p class="card-text title"> <%= pin["title"] %></p>
+              <p class="card-text"> <%= pin["description"] %></p>
+              <% if pin["rich_summary"].present? == true %>
+                <p class="card-text site-name"> <%= pin["rich_summary"]["site_name"] %></p>
+              <% end %>
+          </div>
+          <div class="col-md-4">
+             <p class="card-text text-right repin-count"> <%= pin["repin_count"] %></p>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-2">
             <img class="user-image" src="<%= pin["pinner"]["image_small_url"] %>" alt="">
