@@ -15,7 +15,7 @@ You will also need to run the following commands in your terminal:
 ```rails db:migrate```
 
 Then run rails server to see it in your local host.   
-```run rails server```   
+```rails server```   
 
 The application should be live at http://localhost:3000/ or the port you indicate.  
 
