@@ -1,24 +1,25 @@
-# README
+# Pinterest Endless Scroll
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pinterest Endless Scroll is a Ruby on Rails application which allows you to endlessly scroll through a static json dataset and see an infinite amount of cats!  
 
-Things you may want to cover:
+##Usage: 
+To run the application on your local drive, you will need Ruby on Rails.
 
-* Ruby version
+Clone or download the application. 
 
-* System dependencies
+After cloning or downloading the application to your local drive, run bundle install to install all dependencies.   
+```bundle install```
 
-* Configuration
+You will also need to run the following commands in your terminal:  
+```rails db:create```  
+```rails db:migrate```
 
-* Database creation
+Then run rails server to see it in your local host.   
+```run rails server```   
 
-* Database initialization
+The application should be live at http://localhost:3000/ or the port you indicate.  
 
-* How to run the test suite
+##Dependencies:   
+Ruby version 2.3.0
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##The application is live: 
