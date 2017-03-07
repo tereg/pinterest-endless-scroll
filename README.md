@@ -21,5 +21,3 @@ The application should be live at http://localhost:3000/ or the port you indicat
 
 ##Dependencies:   
 Ruby version 2.3.0
-
-##The application is live: 
